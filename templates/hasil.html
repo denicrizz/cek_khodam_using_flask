@@ -3,63 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cek khodam mu</title>
+    <title>Hasil Pencarian Khodam</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
-            background-color: #f8f9fa;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #161853; 
         }
         .container {
-            background-color: #ffffff;
+            background: #FAEDF0;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         h1 {
             color: #007bff;
         }
-        p {
-            font-size: 1.1em;
-        }
         .btn-primary {
             background-color: #007bff;
             border: none;
-            transition: background-color 0.3s ease;
         }
         .btn-primary:hover {
             background-color: #0056b3;
         }
-        .footer {
-            text-align: center;
+        footer {
             margin-top: 20px;
-            font-size: 0.9em;
-            color: #6c757d;
-        }
-        .footer a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        .footer a:hover {
-            text-decoration: underline;
+            text-align: center;
+            color: #aaa;
         }
     </style>
 </head>
 <body>
     <div class="container mt-5">
-        <h1 class="text-center">Hasil Pencarian Khodam</h1>
-        <div class="card mt-4">
-            <div class="card-body">
-                <p><strong>Khodam yang cocok:</strong> {{ khodam }}</p>
-                <p><strong>Arti dari Khodam:</strong> {{ arti }}</p>
-            </div>
-        </div>
-        <div class="text-center mt-4">
-            <a href="/" class="btn btn-primary btn-lg">Cari Khodam Lain</a>
-        </div>
-        <div class="footer">
-            <p>by: <a href="https://github.com/mangyoi/cek_khodam_classifier.git" target="github">manghehe</a></p>
-        </div>
+        <h1>Hasil Pencarian Khodam</h1>
+        
+        <p><strong>Nama</strong> {{ nama }}</p>
+        <p><strong>Khodam</strong> {{ khodam }}</p>
+        <p><strong>Kekuatan</strong> {{ arti }}</p>
+        <a href="/" class="btn btn-primary">Cek Lagi</a>
+        <footer>
+            <p>by: manghehe</p>
+        </footer>
     </div>
 </body>
 </html>

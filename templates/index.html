@@ -6,63 +6,46 @@
     <title>Pencarian Khodam</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        body {
-            background-color: #e9ecef;
-            font-family: 'Arial', sans-serif;
+       body {
+            background-color: #161853; 
         }
         .container {
-            background-color: #ffffff;
-            padding: 30px;
+            background: #FAEDF0;
+            padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-            margin-top: 50px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         h1 {
             color: #007bff;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-        .form-group label {
-            font-weight: bold;
         }
         .btn-primary {
             background-color: #007bff;
             border: none;
-            width: 100%;
-            padding: 10px;
-            transition: background-color 0.3s ease;
         }
         .btn-primary:hover {
             background-color: #0056b3;
         }
-        .footer {
-            text-align: center;
+        footer {
             margin-top: 20px;
-            font-size: 0.9em;
-            color: #6c757d;
-        }
-        .footer a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        .footer a:hover {
-            text-decoration: underline;
+            text-align: center;
+            color: #aaa;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Pencarian Khodam</h1>
+    <div class="container mt-5">
+        <h1 class="mb-4">Pencarian Khodam</h1>
         <form action="/cek_khodam" method="POST">
             <div class="form-group">
                 <label for="nama">Masukkan Nama:</label>
-                <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukan Namamu" required>
+                <input type="text" class="form-control" id="nama" name="nama" required>
             </div>
             <button type="submit" class="btn btn-primary">Cari Khodam</button>
         </form>
-        <div class="footer mt-4">
-            <p>by: <a href="https://github.com/mangyoi/cek_khodam_classifier.git" target="github">manghehe</a></p>
-        </div>
+        <footer>
+            <p class="mt-3 text-muted">by: manghehe</p>
+        </footer>
+        
     </div>
 </body>
 </html>
